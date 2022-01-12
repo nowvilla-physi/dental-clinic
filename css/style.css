@@ -1,0 +1,263 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  color: #515151;
+  background-color: #F6F6F6;
+}
+
+.wrapper {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.top-bar {
+  width: 100vw;
+  height: 5px;
+  background-color: #6CC6C4;
+}
+
+.dentistry {
+  border-radius: 10px 10px 0 0;
+}
+
+.dentistry h2 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9ce3e1), to(#6cc6c4));
+  background-image: linear-gradient(#9ce3e1 0%, #6cc6c4 100%);
+  display: block;
+  border-radius: 10px 10px 0 0;
+  padding: 10px 0 10px 15px;
+  background-color: #6CC6C4;
+  color: white;
+}
+
+.dentistry ul .aside-wrapper {
+  padding: 0 15px 20px 15px;
+  background-color: white;
+  border-left: 1px #6CC6C4 solid;
+  border-right: 1px #6CC6C4 solid;
+  border-bottom: 1px #6CC6C4 solid;
+}
+
+.dentistry ul li {
+  font-size: 0.9rem;
+  border-bottom: 1px #6CC6C4 solid;
+  padding: 15px 0 15px 40px;
+  list-style-position: inside;
+  position: relative;
+}
+
+.dentistry ul li span {
+  font-weight: bold;
+}
+
+.dentistry ul li::before {
+  content: url(../image/square.png);
+  position: absolute;
+  left: 10px;
+}
+
+#header {
+  margin-top: 12px;
+}
+
+#header .description {
+  text-align: right;
+  font-size: 0.3rem;
+}
+
+#header .header-contents {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#header .header-contents .tel-number {
+  position: relative;
+  vertical-align: middle;
+  text-align: right;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+}
+
+#header .header-contents .tel-number::before {
+  content: url(../image/bgTel.png);
+  position: absolute;
+  left: 0px;
+}
+
+#header .header-contents .reserve-time {
+  width: 224px;
+  border: #dedede 1px solid;
+  font-size: 0.3rem;
+  padding: 8px 10px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+#header .header-contents .reserve-time .holiday {
+  color: red;
+}
+
+#header .page-navigation {
+  margin-top: 20px;
+  border: 1px solid #6CC6C4;
+  border-radius: 10px;
+  background-color: #6CC6C4;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#9ce3e1), to(#6cc6c4));
+  background-image: linear-gradient(#9ce3e1 0%, #6cc6c4 100%);
+}
+
+#header .page-navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#header .page-navigation ul li {
+  color: white;
+  width: 20%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+#header .page-navigation ul li:hover {
+  opacity: 0.5;
+}
+
+#header .page-navigation ul li:not(:last-child) {
+  border-right: 1px solid #6CC6C4;
+}
+
+#header .page-navigation ul li span {
+  font-size: 0.5rem;
+}
+
+#main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+#main #aside {
+  width: 30%;
+}
+
+#main #article {
+  width: 68%;
+}
+
+#main #article img {
+  width: 100%;
+}
+
+#main #article .new-info {
+  margin-top: 5px;
+  background-color: white;
+  padding: 35px 20px 40px;
+  border-radius: 0 0 10px 10px;
+}
+
+#main #article .new-info hr {
+  margin-top: 15px;
+  border: #6CC6C4 2px solid;
+}
+
+#main #article .new-info dl {
+  margin-top: 30px;
+}
+
+#main #article .new-info dl .news {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px dotted #dedede;
+  padding: 12px 0;
+  margin-left: 10px;
+}
+
+#main #article .new-info dl .news dt {
+  padding-top: 5px;
+  width: 25%;
+  font-size: 0.8rem;
+}
+
+#main #article .new-info dl .news dd {
+  line-height: 1.4;
+  width: 75%;
+  padding-left: 10px;
+  font-size: 0.8rem;
+}
+
+#general a:hover {
+  color: #6CC6C4;
+}
+
+#aesthetic {
+  margin-top: 20px;
+}
+
+#aesthetic a:hover {
+  color: #b8d200;
+}
+
+#footer .menu {
+  margin-top: 20px;
+}
+
+#footer .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #6CC6C4;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+#footer .menu ul li {
+  font-size: 0.9rem;
+  color: white;
+  margin-left: 30px;
+  margin-right: 10px;
+  position: relative;
+}
+
+#footer .menu ul li::before {
+  position: absolute;
+  left: -20px;
+  top: -1px;
+  content: url(../image/circle.png);
+}
+
+#footer .menu ul li a:hover {
+  text-decoration: underline;
+}
+
+#footer .menu h3 {
+  font-size: 0.8rem;
+  display: block;
+  padding: 20px 0;
+  text-align: right;
+}
+
+#footer .menu hr {
+  border: 1px solid #6CC6C4;
+}
+
+#footer .menu p {
+  font-size: 0.8rem;
+  padding: 10px 0;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,265 @@
+@charset "utf-8";
+
+$primary-color: #6CC6C4;
+
+@mixin hover-color($color) {
+    a:hover {
+        color: $color;
+    }
+}
+
+// common.
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #515151;
+    background-color: #F6F6F6;
+}
+
+.wrapper {
+    max-width: 920px;
+    margin: 0 auto;
+}
+
+.top-bar {
+    width: 100vw;
+    height: 5px;
+    background-color: $primary-color;
+}
+
+.dentistry {
+    border-radius: 10px 10px 0 0;
+
+    h2 {
+        background-image: linear-gradient(rgb(156, 227, 225) 0%, rgb(108, 198, 196) 100%);
+        display: block;
+        border-radius: 10px 10px 0 0;
+        padding: 10px 0 10px 15px;
+        background-color: $primary-color;
+        color: white;
+    }
+
+    ul {
+        .aside-wrapper {
+            padding: 0 15px 20px 15px;
+            background-color: white;
+            border-left: 1px $primary-color solid;
+            border-right: 1px $primary-color solid;
+            border-bottom: 1px $primary-color solid;
+        }
+
+        li {
+            font-size: 0.9rem;
+            border-bottom: 1px $primary-color solid;
+
+            padding: 15px 0 15px 40px;
+            list-style-position: inside;
+            position: relative;
+
+            span {
+                font-weight: bold;
+            }
+
+            &::before {
+                content: url(../image/square.png);
+                position: absolute;
+                left: 10px;
+            }
+        }
+    }
+}
+
+// header
+#header {
+    margin-top: 12px;
+
+    .description {
+        text-align: right;
+        font-size: 0.3rem;
+    }
+
+    .header-contents {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        .tel-number {
+            position: relative;
+            vertical-align: middle;
+            text-align: right;
+            font-size: 1.4rem;
+            letter-spacing: 2px;
+
+
+            &::before {
+                content: url(../image/bgTel.png);
+                position: absolute;
+                left: 0px;
+            }
+        }
+
+        .reserve-time {
+            width: 224px;
+            border: #dedede 1px solid;
+            font-size: 0.3rem;
+            padding: 8px 10px;
+            margin-top: 10px;
+            text-align: center;
+
+
+            .holiday {
+                color: red;
+            }
+        }
+    }
+
+    .page-navigation {
+        margin-top: 20px;
+        border: 1px solid $primary-color;
+        border-radius: 10px;
+        background-color: $primary-color;
+        background-image: linear-gradient(rgb(156, 227, 225) 0%, rgb(108, 198, 196) 100%);
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+
+            li {
+                color: white;
+                width: 20%;
+                padding: 20px 0;
+                text-align: center;
+
+                &:hover {
+                    opacity: 0.5;
+                }
+
+                &:not(:last-child) {
+                    border-right: 1px solid $primary-color;
+                }
+
+                span {
+                    font-size: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+// main.
+#main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    #aside {
+        width: 30%;
+    }
+
+    #article {
+        width: 68%;
+
+        img {
+            width: 100%;
+        }
+
+        .new-info {
+            margin-top: 5px;
+            background-color: white;
+            padding: 35px 20px 40px;
+            border-radius: 0 0 10px 10px;
+
+            hr {
+                margin-top: 15px;
+                border: #6CC6C4 2px solid;
+            }
+
+            dl {
+                margin-top: 30px;
+
+                .news {
+                    display: flex;
+                    border-bottom: 1px dotted #dedede;
+                    padding: 12px 0;
+                    margin-left: 10px;
+
+                    dt {
+                        padding-top: 5px;
+                        width: 25%;
+                        font-size: 0.8rem;
+                    }
+
+                    dd {
+                        line-height: 1.4;
+                        width: 75%;
+                        padding-left: 10px;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// aside
+#general {
+    @include hover-color($primary-color)
+}
+
+#aesthetic {
+    margin-top: 20px;
+    @include hover-color(#b8d200)
+}
+
+// footer
+#footer {
+    .menu {
+        margin-top: 20px;
+
+        ul {
+            display: flex;
+            background-color: $primary-color;
+            padding: 8px;
+            border-radius: 5px;
+
+            li {
+                font-size: 0.9rem;
+                color: white;
+                margin-left: 30px;
+                margin-right: 10px;
+                position: relative;
+
+                &::before {
+                    position: absolute;
+                    left: -20px;
+                    top: -1px;
+
+                    content: url(../image/circle.png)
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+
+        h3 {
+            font-size: 0.8rem;
+            display: block;
+            padding: 20px 0;
+            text-align: right;
+        }
+
+        hr {
+            border: 1px solid $primary-color;
+        }
+
+        p {
+            font-size: 0.8rem;
+            padding: 10px 0;
+            text-align: center;
+        }
+    }
+}
